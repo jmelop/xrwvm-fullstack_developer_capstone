@@ -83,7 +83,7 @@ def registration(request):
     # If it is a new user
     if not username_exist:
         # Create user in auth_user table
-        user = User.objects.create_user(username=username, 
+        user = User.objects.create_user(username=username,
                                         first_name=first_name,
                                         last_name=last_name,
                                         password=password,
