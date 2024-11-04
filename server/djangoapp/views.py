@@ -94,7 +94,20 @@ def get_dealerships(request, state="All"):
         endpoint = "/fetchDealers"
     else:
         endpoint = "/fetchDealers/"+state
+    print(endpoint)
+    print(endpoint)
+    print(endpoint)
+    print(endpoint)
+    print(endpoint)
+    print(endpoint)
     dealerships = get_request(endpoint)
+    print(dealerships)
+    print(dealerships)
+    print(dealerships)
+    print(dealerships)
+    print(dealerships)
+    print(dealerships)
+
     return JsonResponse({"status":200,"dealers":dealerships})
 
 # Create a `get_dealer_reviews` view to render the reviews of a dealer
